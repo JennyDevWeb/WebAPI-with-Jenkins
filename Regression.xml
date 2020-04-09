@@ -1,8 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression Test Suite">
-    <test name=" API Test" preserve-order="true">
-        <classes>
-            <class name="testCases.TestAPI"></class>
-        </classes>
-    </test>
-</suite>
