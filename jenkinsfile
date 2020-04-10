@@ -1,0 +1,19 @@
+node
+{
+    stage('Checkout')
+    {
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'cc62e4be-fb25-495e-93d1-c27d7da49781', url: 'https://github.com/JennyDevWeb/WebAPI.git']]])   
+    }
+    stage('Static Code Analysis')
+    {
+        echo "Static Code Analysis"
+    }
+    stage('Unit Testing')
+    {
+        echo "Unit Testing"
+    }
+    stage('Delivery Code')
+    {
+        echo "Delivery Code"
+    }
+}
